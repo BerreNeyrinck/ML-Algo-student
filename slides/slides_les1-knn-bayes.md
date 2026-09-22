@@ -91,13 +91,13 @@ flowchart LR
 
 ## ... en nog meer herbruikbare methodes
 
-| Methode | Gebruik | Voorbeeld |
-|---------|---------|-----------|
-| `.fit(X, y)` | Train het model | `knn.fit(X_train, y_train)` |
-| `.predict(X)` | Voorspel labels | `knn.predict(X_test)` |
-| `.score(X, y)` | Bereken nauwkeurigheid | `knn.score(X_test, y_test)` |
-| `.transform(X)` | Transformeer data (preprocessing) | `scaler.transform(X_test)` |
-| `.fit_transform(X)` | Fit + transform in één stap | `scaler.fit_transform(X_train)` |
+| Methode             | Gebruik                           | Voorbeeld                       |
+| ------------------- | --------------------------------- | ------------------------------- |
+| `.fit(X, y)`        | Train het model                   | `knn.fit(X_train, y_train)`     |
+| `.predict(X)`       | Voorspel labels                   | `knn.predict(X_test)`           |
+| `.score(X, y)`      | Bereken nauwkeurigheid            | `knn.score(X_test, y_test)`     |
+| `.transform(X)`     | Transformeer data (preprocessing) | `scaler.transform(X_test)`      |
+| `.fit_transform(X)` | Fit + transform in één stap       | `scaler.fit_transform(X_train)` |
 
 > **Opgelet:** `.fit()` en `.predict()` zijn **altijd** beschikbaar voor supervised modellen; `.transform()` enkel voor preprocessing / unsupervised.
 
@@ -220,11 +220,11 @@ $$
 
 ## Meerdere woorden screenen — gegevens
 
-| Woord | $P(\text{woord} \mid \text{spam})$ | $P(\text{woord} \mid \neg\text{spam})$ |
-|-------|:---:|:---:|
-| 'moneytransfer' | $0.4$ | $0.0001$ |
-| 'uganda' | $0.1$ | $0.05$ |
-| 'AP Hogeschool' | $0.001$ | $0.3$ |
+| Woord           | $P(\text{woord} \mid \text{spam})$ | $P(\text{woord} \mid \neg\text{spam})$ |
+| --------------- | :--------------------------------: | :------------------------------------: |
+| 'moneytransfer' |               $0.4$                |                $0.0001$                |
+| 'uganda'        |               $0.1$                |                 $0.05$                 |
+| 'AP Hogeschool' |              $0.001$               |                 $0.3$                  |
 
 **Vraag:** Een e-mail bevat **niet** 'moneytransfer', maar **wel** 'uganda' en 'AP Hogeschool'.  
 Wat is de kans op spam?
