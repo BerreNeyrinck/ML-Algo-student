@@ -218,4 +218,5 @@ __marimo__/
 .streamlit/secrets.toml
 
 ## hidden files
-*hidden*
+*hidden*exercises_with_checks/week05/data/creditcard.csv
+exercises_with_checks/week05/data/creditcard.csv
